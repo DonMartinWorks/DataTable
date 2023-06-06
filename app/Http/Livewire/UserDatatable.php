@@ -21,9 +21,11 @@ class UserDatatable extends DataTableComponent
             Column::make("Id", "id")
                 ->sortable(),
             Column::make("Name", "name")
-                ->sortable(),
-            Column::make("Email", "email")
-                ->sortable(),
+                ->sortable()
+                ->searchable(),
+                Column::make("Email", "email")
+                ->sortable()
+                ->searchable(),
             Column::make("Created at", "created_at")
                 ->sortable(),
             Column::make("Updated at", "updated_at")
