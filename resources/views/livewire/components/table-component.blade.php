@@ -7,8 +7,10 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                tabla
+            <div class="bg-gray-400 overflow-hidden shadow-xl sm:rounded-lg">
+                <div class="ml-3 mr-3 mt-3 mb-3">
+                    @livewire('user-datatable')
+                </div>
             </div>
         </div>
     </div>
