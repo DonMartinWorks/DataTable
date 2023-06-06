@@ -24,7 +24,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/table', TableComponent::class);
+    Route::get('/table', TableComponent::class)->name('table');
 
     Route::get('/dashboard', function () {
         return view('dashboard');
